@@ -1,0 +1,34 @@
+{
+  "name": "basic-http-class-example",
+  "version": "1.0.0",
+  "engine": {
+    "node": "24.x"
+  },
+  "description": "A basic http server",
+  "keywords": [
+  
+  ],
+  "homepage": "https://github.com/TinySweetNight/basic-http-class-example#readme",
+  "bugs": {
+    "url": "https://github.com/TinySweetNight/basic-http-class-example/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinySweetNight/basic-http-class-example.git"
+  },
+  "license": "ISC",
+  "author": "Lily",
+  "type": "commonjs",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+     "eslint": "^10.9.1",
+    "globals": "^17.11.0"
+  }
+}
