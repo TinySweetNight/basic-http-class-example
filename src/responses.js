@@ -7,8 +7,13 @@ const sendPage = (request, response, page) => {
     response.writeHead(200, {'Content-Type':'text/html'});
     response.write(page);
     response.end();
-
 };
+
+const getMessage = (request, response) => {
+      response.writeHead(200, {'Content-Type':'text/plain'});
+    response.write('Hello World');
+    response.end();
+}
 
 
 const getIndex = (request, response) => {
@@ -23,5 +28,6 @@ const getClient2 = (request, response) => {
 
 module.exports = {
     getIndex,
-    getClient2
+    getClient2,
+    getMessage
 };

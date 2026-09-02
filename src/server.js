@@ -9,7 +9,11 @@ const onRequest = (request, response) => {
  if(request.url === '/client2' ){
     responses.getClient2(request, response);
 
- }else{
+ } else if(request.url === '/message'){
+    responses.getMessage(request, response);
+
+ }
+ else{
     responses.getIndex(request, response);
  }
 };
